@@ -1,20 +1,5 @@
 # CS 351L - Artificial Intelligence Lab
 
-## Lab 2: Introduction to search in AI: Problem spaces, states, and goals
-
-**Course**: CS 351L - Artificial Intelligence Lab  
-**Instructor**: Mr. Usama Arshad, PhD CS  
-**Program**: BS Cybersecurity  
-**Semester**: 5th  
-**Assigned Date**: 4th September 2024  
-**Submission Deadline**: 17th September 2024
-
----
-
-## Lab Overview
-
-# CS 351L - Artificial Intelligence Lab
-
 ## Lab 2: Introduction to Search in AI - Problem Spaces, States, and Goals
 
 **Course**: CS 351L - Artificial Intelligence Lab  
