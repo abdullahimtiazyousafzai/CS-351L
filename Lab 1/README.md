@@ -30,7 +30,7 @@ In this lab, we explore different algorithms by implementing a Number Guessing G
    - Implement a version where the computer guesses the number using the DFS algorithm, focusing on a more aggressive approach in terms of depth-first exploration.
 
 5. **Custom Algorithm**:
-   - Implement the Number Guessing Game using an algorithm of your choice. The chosen algorithm in this solution is **Simulated Annealing**, a probabilistic technique for approximating the global optimum of a function. This algorithm introduces randomness in exploration and decreases this randomness over time, mimicking the cooling process of metal annealing.
+   - Implement the Number Guessing Game using an algorithm of your choice. The chosen algorithm in this solution is **Ternary Search**, which is an extension of Binary Search that divides the search space into three parts instead of two.
 
 ### Code Structure and Implementation:
 
@@ -48,10 +48,11 @@ In the BFS-based version, the game explores all possible numbers level by level.
 #### 4. Depth-First Search (DFS) Version
 For the DFS-based version, the game explores numbers more aggressively by following a depth-based approach. However, this can lead to inefficient guessing patterns, with higher chances of overshooting the correct number, though it can be beneficial for certain search spaces.
 
-#### 5. Custom Algorithm: Simulated Annealing
-The custom algorithm implemented in this solution is **Simulated Annealing**. In this algorithm:
-   - The AI begins with a random guess and uses a probabilistic approach to either stay with the current guess or explore a new guess.
-   - As the "temperature" decreases, the AI becomes less likely to make large jumps, focusing on smaller adjustments as it converges on the correct number.
-   - This mimics how metals cool and anneal, making this an interesting and effective algorithm for global search problems.
+#### 5. Custom Algorithm: Ternary Search
+The custom algorithm implemented in this solution is **Ternary Search**. In this algorithm:
+   - The AI divides the search range into three parts by selecting two midpoints: one at one-third of the range and the other at two-thirds.
+   - Based on whether the target number is smaller, larger, or between these midpoints, the algorithm eliminates two-thirds of the search space in each step.
+   - This leads to a faster narrowing of the possible numbers compared to linear or binary search approaches.
+   - Ternary Search improves efficiency by reducing the search space more quickly, making it especially useful in situations where the range is large and multiple comparisons are beneficial.
 
 Each algorithm implementation prints the number of attempts it took to guess the correct number, providing an insight into the efficiency and effectiveness of each approach.
